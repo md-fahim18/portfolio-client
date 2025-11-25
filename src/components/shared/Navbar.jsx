@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ThemeSwitcher from "./ThemeSwitcher.jsx";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-primary">
-          MyAgency
+          BornoByte Agency
         </Link>
 
         {/* Desktop Menu */}
@@ -26,6 +27,9 @@ const Navbar = () => {
           <Link to="/contact" className="text-gray-700 hover:text-primary font-medium">
             Contact
           </Link>
+
+          {/* Theme Switcher */}
+          <ThemeSwitcher />
         </div>
 
         {/* Mobile Hamburger */}
@@ -54,6 +58,11 @@ const Navbar = () => {
           <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-gray-700 font-medium">
             Contact
           </Link>
+
+          {/* Theme Switcher in Mobile Menu */}
+          <div className="pt-2">
+            <ThemeSwitcher />
+          </div>
         </div>
       )}
     </nav>

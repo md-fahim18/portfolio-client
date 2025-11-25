@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100 text-gray-700 py-8 mt-12">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-sm">&copy; {new Date().getFullYear()} MyAgency. All rights reserved.</p>
+        <p className="text-sm">&copy; {new Date().getFullYear()} BornoByte Agency. All rights reserved.</p>
 
         <div className="flex space-x-4">
           <Link to="/" className="hover:text-primary text-sm">
