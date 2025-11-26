@@ -5,7 +5,7 @@ import CTASection from "./CTASection";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-24">
+    <div>
       <HeroSection />
       <ServicesSection />
       <CTASection />
